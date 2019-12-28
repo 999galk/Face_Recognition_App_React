@@ -128,7 +128,7 @@ class App extends Component {
 		   		<FaceReco imgUrl={imgUrl} box={box}/>
 		   		</div>
 		   		: (
-		   			this.state.route === 'signin' || this.state.route === 'signout' 
+		   			(this.state.route === 'signin' || this.state.route === 'signout') 
 		   			? <SignIn onRouteChange={this.onRouteChange} loadUser={this.loadUser}/>
 		   			: <Register onRouteChange={this.onRouteChange} loadUser={this.loadUser}/>
 		   			)
