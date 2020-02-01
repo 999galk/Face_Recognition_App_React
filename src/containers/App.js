@@ -9,7 +9,7 @@ import Register from '../components/Register/Register';
 import Rank from '../components/Rank/Rank';
 import './App.css';
 
-console.log('path:', process.env.PATH);
+console.log('path at app:', process.env.PATH);
 const particlesOptions = {
   particles: {
     number: {
