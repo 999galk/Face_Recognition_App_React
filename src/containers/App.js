@@ -113,6 +113,10 @@ class App extends Component {
     this.setState({route: route});
   }
 
+  componentDidMount() {
+		fetch('https://pacific-anchorage-51009.herokuapp.com/');
+  }
+
 	render(){
 		const { isSignedIn,imgUrl,box,route } = this.state;
 	  return (
